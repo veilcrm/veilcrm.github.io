@@ -2,6 +2,7 @@
 title: AI-Enhanced Blockchain CRM for Onboarding and Customer Engagement in Web3
 date: 2025-01-01
 author: Veil CRM Team
+excerpt: The rapid adoption of Web3 technologies has introduced complex barriers for non-technical users entering the crypto ecosystem...
 ---
 
 

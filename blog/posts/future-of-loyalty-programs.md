@@ -1,7 +1,8 @@
 ---
 title: The Future of Loyalty Programs
 date: 2025-01-07
-author: Veil Team
+author: Veil CRM Team
+excerpt: The loyalty program landscape is undergoing a revolutionary transformation. Traditional points-based systems, plastic cards...
 ---
 
 # The Future of Loyalty Programs: Where Blockchain Meets Customer Engagement

@@ -1,5 +1,5 @@
 ---
-title: Traditional CRM vs. Web3 CRM: A Paradigm Shift in Customer Engagement
+title: Traditional CRM vs. Web3 CRM - A Paradigm Shift in Customer Engagement
 date: 2025-01-25
 author: Veil CRM Team
 ---

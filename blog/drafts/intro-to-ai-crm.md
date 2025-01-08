@@ -1,5 +1,5 @@
 ---
-title: Introduction to AI CRM: Bridging Web3 and Customer Engagement
+title: Introduction to AI CRM - Bridging Web3 and Customer Engagement
 date: 2025-01-09
 author: Veil Team
 tags: [AI, CRM, Web3, Blockchain, Customer Engagement]

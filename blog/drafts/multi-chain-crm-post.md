@@ -1,5 +1,5 @@
 ---
-title: Multi-Chain Support: The Backbone of Modern Web3 CRM Systems
+title: Multi-Chain Support - The Backbone of Modern Web3 CRM Systems
 date: 2025-01-15
 author: Veil CRM Team
 ---

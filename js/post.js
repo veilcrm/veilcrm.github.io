@@ -22,52 +22,38 @@ document.addEventListener('DOMContentLoaded', async () => {
                 throw new Error('No post ID provided');
             }
 
-            // Fetch the post content directly (assuming markdown files are in a /posts directory)
-            const postResponse = await fetch(`${postId}`);
+            // Load the HTML file directly
+            const postResponse = await fetch(postId);
             if (!postResponse.ok) {
                 throw new Error(`Failed to load post: ${postResponse.status}`);
             }
 
-            const markdownContent = await postResponse.text();
-
-            // Normalize line endings and ensure proper spacing
-            const normalizedContent = markdownContent.replace(/\r\n/g, '\n').trim();
+            const htmlContent = await postResponse.text();
             
-            // More flexible regex that handles various line endings and spacing
-            const frontMatterRegex = /^---[\r\n]+([\s\S]*?)[\r\n]+---[\r\n]+([\s\S]*)$/;
-            const matches = normalizedContent.match(frontMatterRegex);
-
-            if (!matches) {
+            // Create a temporary container to parse the HTML
+            const tempContainer = document.createElement('div');
+            tempContainer.innerHTML = htmlContent;
+            
+            // Extract the main content (everything inside post-container)
+            const postContainer = tempContainer.querySelector('.post-container');
+            
+            if (!postContainer) {
                 throw new Error('Invalid post format');
             }
 
-            const frontMatter = parseFrontMatter(matches[1]);
-            const content = matches[2];
-            console.log(content);
+            // Update the document title
+            const postTitle = tempContainer.querySelector('.post-header h1')?.textContent || 'Blog Post';
+            document.title = `${postTitle} - Veil CRM Blog`;
 
-            // Update page title
-            document.title = `${frontMatter.title} - Veil CRM Blog`;
+            // Replace the current post-container with the loaded one
+            const currentPostContainer = document.querySelector('.post-container');
+            currentPostContainer.replaceWith(postContainer);
 
-            // Render the post content
-            postContent.innerHTML = `
-                <article class="post">
-                    <div class="post-body">
-                        ${marked.parse(content)}
-                    </div>
-                </article>
-            `;
-            // Initialize table of contents
+            // Initialize the table of contents
             createTableOfContents();
 
             // Initialize sharing functionality
-            initializeSharing(frontMatter.title);
-
-            // Initialize syntax highlighting if code blocks exist
-            if (typeof hljs !== 'undefined') {
-                document.querySelectorAll('pre code').forEach((block) => {
-                    hljs.highlightElement(block);
-                });
-            }
+            initializeSharing();
 
             // Initialize Lucide icons
             if (typeof lucide !== 'undefined') {

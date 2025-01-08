@@ -1,5 +1,5 @@
 ---
-title: Comparing Loyalty Program Approaches: Centralized vs. Decentralized
+title: Comparing Loyalty Program Approaches - Centralized vs. Decentralized
 date: 2025-01-13
 author: Veil CRM Team
 ---

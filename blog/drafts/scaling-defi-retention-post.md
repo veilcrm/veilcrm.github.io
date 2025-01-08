@@ -1,5 +1,5 @@
 ---
-title: Scaling Your DeFi Platform: Customer Retention Strategies
+title: Scaling Your DeFi Platform - Customer Retention Strategies
 date: 2025-01-17
 author: Veil CRM Team
 ---

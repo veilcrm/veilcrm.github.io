@@ -1,26 +1,30 @@
 [
-    {
-        "title": "AI-Enhanced Blockchain CRM for Onboarding and Customer Engagement in Web3",
-        "excerpt": "The rapid adoption of Web3 technologies has introduced complex barriers for non-technical users entering the crypto ecosystem...",
-        "url": "/blog/posts/veil-crm-whitepaper.md",
-        "date": "2025-01-01"
-    },
-    {
-        "title": "Best Practices and Tools",
-        "excerpt": "Decentralized Autonomous Organizations (DAOs) represent a revolutionary approach to collaborative decision-making and resource...",
-        "url": "/blog/posts/dao-member-engagement-post.md",
-        "date": "2025-01-03"
-    },
-    {
-        "title": "CRM Strategies for DeFi Lending Platforms",
-        "excerpt": "The decentralized finance (DeFi) lending ecosystem is rapidly evolving, presenting unique challenges and opportunities for...",
-        "url": "/blog/posts/defi-lending-crm-post.md",
-        "date": "2025-01-05"
-    },
-    {
-        "title": "The Future of Loyalty Programs",
-        "excerpt": "The loyalty program landscape is undergoing a revolutionary transformation. Traditional points-based systems, plastic cards...",
-        "url": "/blog/posts/future-of-loyalty-programs.md",
-        "date": "2025-01-07"
-    }
+  {
+    "title": "DAO Member Engagement: Best Practices and Tools",
+    "excerpt": "Decentralized Autonomous Organizations (DAOs) represent a revolutionary approach to collaborative decision-making and resource...",
+    "url": "/blog/html/dao-member-engagement-post.html",
+    "date": "2025-01-03T00:00:00.000Z",
+    "author": "Veil CRM Team"
+  },
+  {
+    "title": "CRM Strategies for DeFi Lending Platforms",
+    "excerpt": "The decentralized finance (DeFi) lending ecosystem is rapidly evolving, presenting unique challenges and opportunities for...",
+    "url": "/blog/html/defi-lending-crm-post.html",
+    "date": "2025-01-05T00:00:00.000Z",
+    "author": "Veil CRM Team"
+  },
+  {
+    "title": "The Future of Loyalty Programs",
+    "excerpt": "The loyalty program landscape is undergoing a revolutionary transformation. Traditional points-based systems, plastic cards...",
+    "url": "/blog/html/future-of-loyalty-programs.html",
+    "date": "2025-01-07T00:00:00.000Z",
+    "author": "Veil CRM Team"
+  },
+  {
+    "title": "AI-Enhanced Blockchain CRM for Onboarding and Customer Engagement in Web3",
+    "excerpt": "The rapid adoption of Web3 technologies has introduced complex barriers for non-technical users entering the crypto ecosystem...",
+    "url": "/blog/html/veil-crm-whitepaper.html",
+    "date": "2025-01-01T00:00:00.000Z",
+    "author": "Veil CRM Team"
+  }
 ]

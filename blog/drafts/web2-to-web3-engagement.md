@@ -1,5 +1,5 @@
 ---
-title: The Evolution of Customer Engagement: From Web2 to Web3
+title: The Evolution of Customer Engagement - From Web2 to Web3
 date: 2025-01-23
 author: Veil CRM Team
 ---

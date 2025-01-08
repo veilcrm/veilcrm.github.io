@@ -2,6 +2,7 @@
 title: CRM Strategies for DeFi Lending Platforms
 date: 2025-01-05
 author: Veil CRM Team
+excerpt: The decentralized finance (DeFi) lending ecosystem is rapidly evolving, presenting unique challenges and opportunities for...
 ---
 
 # CRM Strategies for DeFi Lending Platforms: Enhancing User Engagement and Retention
