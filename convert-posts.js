@@ -7,10 +7,10 @@ function generateTableOfContents(htmlContent) {
     // Create regex patterns for finding headings
     const h2Pattern = /<h2.*?id="(.*?)".*?>(.*?)<\/h2>/g;
     const h3Pattern = /<h3.*?id="(.*?)".*?>(.*?)<\/h3>/g;
-    
+
     let headings = [];
     let match;
-    
+
     // Find all h2 headings
     while ((match = h2Pattern.exec(htmlContent)) !== null) {
         headings.push({
@@ -19,7 +19,7 @@ function generateTableOfContents(htmlContent) {
             level: 'h2'
         });
     }
-    
+
     // Find all h3 headings
     while ((match = h3Pattern.exec(htmlContent)) !== null) {
         headings.push({
@@ -28,18 +28,18 @@ function generateTableOfContents(htmlContent) {
             level: 'h3'
         });
     }
-    
+
     if (headings.length === 0) return { tocHtml: '', updatedContent: htmlContent };
 
     // Generate TOC HTML
     let tocHtml = '<ul class="toc-list">\n';
-    
+
     headings.forEach((heading) => {
         const className = `toc-link toc-${heading.level}`;
         const indentation = heading.level === 'h3' ? '    ' : '';
         tocHtml += `${indentation}<li><a href="#${heading.id}" class="${className}">${heading.text}</a></li>\n`;
     });
-    
+
     tocHtml += '</ul>';
 
     return { tocHtml, updatedContent: htmlContent };
@@ -47,7 +47,7 @@ function generateTableOfContents(htmlContent) {
 
 function addIdsToHeadings(htmlContent) {
     let headingCount = 0;
-    
+
     // Add IDs to h2 and h3 tags that don't have them
     return htmlContent.replace(/<(h[23])(.*?)>(.*?)<\/h[23]>/g, (match, tag, attributes, content) => {
         if (!attributes.includes('id=')) {
@@ -136,13 +136,14 @@ async function convertMarkdownToHtml() {
 
                 // Convert markdown to HTML
                 let htmlContent = marked.parse(content);
-                
+
                 // Add IDs to headings and generate TOC
                 htmlContent = addIdsToHeadings(htmlContent);
                 const { tocHtml, updatedContent } = generateTableOfContents(htmlContent);
 
                 // Create HTML file
                 const htmlFileName = file.replace('.md', '.html');
+                const postUrl = `https://www.veilcrm.com/post.html?id=${encodeURIComponent(`/blog/html/${htmlFileName}`)}`;
 
                 const htmlFile = `<!DOCTYPE html>
 <html lang="en">
@@ -175,22 +176,59 @@ async function convertMarkdownToHtml() {
         </article>
 
         <div class="share-buttons">
-            <a href="#" class="share-link copy-link" aria-label="Copy link">
+            <button class="share-link copy-link" aria-label="Copy link" onclick="copyPageUrl()">
                 <i data-lucide="link"></i>
-            </a>
-            <a href="#" class="share-link twitter" aria-label="Share on Twitter">
+            </button>
+            <a href="https://twitter.com/intent/tweet?url=${encodeURIComponent(postUrl)}&text=${encodeURIComponent(frontMatter.title || '')}"
+               class="share-link twitter" 
+               aria-label="Share on Twitter"
+               target="_blank"
+               rel="noopener noreferrer">
                 <i data-lucide="twitter"></i>
             </a>
-            <a href="#" class="share-link facebook" aria-label="Share on Facebook">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(postUrl)}"
+               class="share-link facebook" 
+               aria-label="Share on Facebook"
+               target="_blank"
+               rel="noopener noreferrer">
                 <i data-lucide="facebook"></i>
             </a>
-            <a href="#" class="share-link linkedin" aria-label="Share on LinkedIn">
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(postUrl)}"
+               class="share-link linkedin" 
+               aria-label="Share on LinkedIn"
+               target="_blank"
+               rel="noopener noreferrer">
                 <i data-lucide="linkedin"></i>
             </a>
             <a href="/blog.html" class="share-link back-to-blog" aria-label="Back to Blog">
                 <i data-lucide="arrow-left"></i>
             </a>
         </div>
+        <script>
+        function copyPageUrl() {
+            navigator.clipboard.writeText(window.location.href)
+                .then(() => {
+                    const notification = document.createElement('div');
+                    notification.className = 'notification';
+                    notification.textContent = 'Link copied to clipboard!';
+                    document.body.appendChild(notification);
+                    
+                    setTimeout(() => {
+                        notification.classList.add('show');
+                    }, 10);
+                    
+                    setTimeout(() => {
+                        notification.classList.remove('show');
+                        setTimeout(() => {
+                            notification.remove();
+                        }, 300);
+                    }, 3000);
+                })
+                .catch(err => {
+                    console.error('Failed to copy:', err);
+                });
+        }
+        </script>
     </div>
     
     <div id="footer"></div>
