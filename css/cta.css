@@ -1,0 +1,207 @@
+
+/* ------------------------------- CTA Section ------------------------------ */
+.cta {
+    padding: 4rem 0;
+    background: linear-gradient(180deg, var(--background-dark) 0%, var(--background-light) 100%);
+}
+
+.cta-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.cta-content {
+    position: sticky;
+    top: 100px;
+}
+
+.cta-content h2 {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.cta-content p {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.cta-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.market-snapshot,
+.growth-projection,
+.target-markets {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.market-snapshot h3,
+.growth-projection h3,
+.target-markets h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-value {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: var(--text-gray);
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+.timeline-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.timeline-item i {
+    width: 32px;
+    height: 32px;
+    color: var(--primary-color);
+}
+
+.timeline-content {
+    display: grid;
+    gap: 0.25rem;
+}
+
+.timeline-content .year {
+    font-weight: bold;
+    color: var(--text-light);
+}
+
+.timeline-content .value {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+}
+
+.timeline-content .desc {
+    color: var(--text-gray);
+    font-size: 0.875rem;
+}
+
+.markets-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.market-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.market-item i {
+    width: 24px;
+    height: 24px;
+    color: var(--primary-color);
+}
+
+.market-content h4 {
+    color: var(--text-light);
+    margin-bottom: 0.25rem;
+}
+
+.market-content p {
+    color: var(--text-gray);
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+
+/* ---------------------------- Responsive Design --------------------------- */
+@media (max-width: 1024px) {
+    .cta-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-content {
+        position: static;
+        text-align: center;
+    }
+
+    .cta-content h2 {
+        text-align: center;
+    }
+
+    .cta-buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 968px) {
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .cta-buttons button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {    
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .market-snapshot,
+    .growth-projection,
+    .target-markets {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .cta-buttons {
+        flex-direction: column;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .cta-buttons button {
+        width: 100%;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,64 @@
+<section class="integrations" id="integrations">
+    <div class="container">
+        <h2>Powerful Integrations</h2>
+        <p class="section-text">
+            Our platform provides seamless integration across multiple blockchains and technical layers, powered
+            by a robust architecture designed for Web3 scalability.
+        </p>
+
+        <div class="integration-grid">
+            <div class="integration-card">
+                <i data-lucide="layers"></i>
+                <h3>Frontend Interface</h3>
+                <p>Web and mobile accessibility with AI-powered chatbot interface and intuitive user dashboards
+                </p>
+            </div>
+            <div class="integration-card">
+                <i data-lucide="database"></i>
+                <h3>Backend Infrastructure</h3>
+                <p>AWS-deployed AI CRM agent with powerful data analytics engine and comprehensive API
+                    integration layer</p>
+            </div>
+            <div class="integration-card">
+                <i data-lucide="connectkit"></i>
+                <h3>Blockchain Layer</h3>
+                <p>Multi-chain support for Ethereum, Solana, and Polygon with smart contracts for rewards, data
+                    access, and DAO governance</p>
+            </div>
+            <div class="integration-card">
+                <i data-lucide="wallet"></i>
+                <h3>Wallet Integration</h3>
+                <p>Support for MetaMask, Phantom, and major Web3 wallets with secure key management systems</p>
+            </div>
+        </div>
+
+        <div class="api-preview">
+            <div class="api-content">
+                <h3>Smart Contract Implementation</h3>
+                <p>Easily integrate with our platform using our secure smart contracts and comprehensive API</p>
+                <pre><code>
+pragma solidity ^0.8.0;
+
+contract RewardManager {
+    mapping(address => uint256) public rewards;
+    
+    function issueReward(address user, uint256 amount) public {
+        rewards[user] += amount;
+    }
+    
+    function claimReward() public {
+        uint256 amount = rewards[msg.sender];
+        require(amount > 0, "No rewards available");
+        rewards[msg.sender] = 0;
+        // Transfer tokens to msg.sender
+    }
+}
+                </code></pre>
+                <a href="docs/whitepaper-v0.pdf" target="_blank" class="btn-secondary">
+                    <i data-lucide="file-text"></i>
+                    View Whitepaper
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

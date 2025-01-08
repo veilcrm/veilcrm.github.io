@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Veil CRM - Web3 Customer Relationship Management</title>
-
+    <title>Blog Post - Veil CRM</title>
     <!-- ------------------------------- Favicon ------------------------------- -->
     <link rel="apple-touch-icon" sizes="57x57" href="/image/favicon/">
     <link rel="apple-touch-icon" sizes="60x60" href="/image/favicon//apple-icon-60x60.png">
@@ -25,35 +22,55 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/image/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    
-    <!-- --------------------------------- CSS --------------------------------- -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/navigation.css">
-    <link rel="stylesheet" href="css/integration.css">
-    <link rel="stylesheet" href="css/pricing.css">
-    <link rel="stylesheet" href="css/cta.css">
-    <link rel="stylesheet" href="css/footer.css">
 
+    <!-- --------------------------------- CSS --------------------------------- -->
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/navigation.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/post.css">
+    
     <!-- ------------------------------- Scripts ------------------------------- -->
     <script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
-
 <body>
     <div id="header"></div>
-    <main>
-        <div id="hero"></div>
-        <div id="features"></div>
-        <div id="integrations"></div>
-        <div id="pricing"></div>
-        <div id="cta"></div>
+    
+    <main class="post-container">
+        <aside class="table-of-contents">
+            <h2>TABLE OF CONTENTS</h2>
+            <nav id="toc-nav"></nav>
+        </aside>
+
+        <div id="post-content" class="post-content">
+            <div class="loading">Loading...</div>
+        </div>
+
+        <div class="share-buttons">
+            <a href="#" class="share-link copy-link" aria-label="Copy link">
+                <i data-lucide="link"></i>
+            </a>
+            <a href="#" class="share-link twitter" aria-label="Share on Twitter">
+                <i data-lucide="twitter"></i>
+            </a>
+            <a href="#" class="share-link facebook" aria-label="Share on Facebook">
+                <i data-lucide="facebook"></i>
+            </a>
+            <a href="#" class="share-link linkedin" aria-label="Share on LinkedIn">
+                <i data-lucide="linkedin"></i>
+            </a>
+            <a href="/blog.html" class="share-link back-to-blog" aria-label="Back to Blog">
+                <i data-lucide="arrow-left"></i>
+            </a>
+        </div>
+
     </main>
-
+    
     <div id="footer"></div>
-
-    <script src="js/script.js"></script>
-    <script src="js/components.js"></script>
+    
+    <script src="/js/script.js"></script>
+    <script src="/js/components.js"></script>
+    <script src="/js/post.js"></script>
 </body>
-
 </html>
