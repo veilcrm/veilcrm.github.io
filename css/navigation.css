@@ -99,6 +99,21 @@ header {
 /* ---------------------------- Responsive Design --------------------------- */
 @media (max-width: 640px) {
     .nav-links {
-        display: none;
+        /* Hide everything except the button */
+        display: flex !important;
+        align-items: center;
+    }
+
+    /* Hide all direct children of nav-links except the button */
+    .nav-links > *:not(.btn-tertiary.link) {
+        display: none !important;
+    }
+
+    /* Force the button to show */
+    .nav-links .btn-tertiary.link {
+        display: flex !important;
+        margin-left: auto;
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
     }
 }

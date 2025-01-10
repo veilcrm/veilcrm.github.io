@@ -127,6 +127,12 @@ footer {
     background: rgba(255, 255, 255, 0.2);
 }
 
+.social-icon {
+    width: 24px; /* Adjust the size as needed */
+    height: 24px; /* Adjust the size as needed */
+    vertical-align: middle; /* Align with text */
+}
+
 .footer-contact {
     font-size: 0.875rem;
     color: var(--text-gray);
@@ -316,6 +322,44 @@ footer {
     }
 
     .footer-image {
+        text-align: center;
+    }
+
+    .footer-contact {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    
+    .email-text {
+        display: block;
+        text-align: center;
+    }
+
+    .email-text .email-link {
+        display: block;
+        text-align: center;
+        margin-top: 0.25rem;
+    }
+
+    /* Center align the entire sib-form */
+    #sib-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sib-form-block {
+        text-align: center;
+        width: 100%;
+    }
+
+    .newsletter-title {
+        text-align: center;
+    }
+
+    .newsletter-disclaimer {
         text-align: center;
     }
 }

@@ -141,8 +141,9 @@
 }
 
 .feature-image img {
-    width: 500px;
-    height: 300px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 5/3;
     object-fit: cover;
     border-radius: 0.5rem;
 }
