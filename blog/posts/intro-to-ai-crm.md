@@ -1,8 +1,8 @@
 ---
 title: Introduction to AI CRM - Bridging Web3 and Customer Engagement
 date: 2025-01-09
-author: Veil Team
-tags: [AI, CRM, Web3, Blockchain, Customer Engagement]
+author: Veil CRM Team
+excerpt: The convergence of artificial intelligence and blockchain technology is revolutionizing how businesses interact with their customers...
 ---
 
 # Introduction to AI CRM: Bridging Web3 and Customer Engagement

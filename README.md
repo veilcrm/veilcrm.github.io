@@ -3,12 +3,6 @@
 Address: 5J6bvnGU7jKcdT9NQfwNwrWu8skDjETfe7fG5LDapump
 ```
     {
-        "title": "Introduction to AI CRM: Bridging Web3 and Customer Engagement",
-        "excerpt": "The convergence of artificial intelligence and blockchain technology is revolutionizing how businesses interact with their customers...",
-        "url": "/blog/posts/intro-to-ai-crm.md",
-        "date": "2025-01-09"
-    },
-    {
         "title": "Introduction to CRM - Beyond Traditional Customer Management",
         "excerpt": "In today's rapidly evolving digital landscape, Customer Relationship Management (CRM) has transformed from a simple contact...",
         "url": "/blog/posts/intro-to-crm.md",
