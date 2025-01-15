@@ -2,6 +2,7 @@
 title: Multi-Chain Support - The Backbone of Modern Web3 CRM Systems
 date: 2025-01-15
 author: Veil CRM Team
+excerpt: In the rapidly evolving landscape of Web3 technologies, multi-chain support has emerged as a critical feature for Customer...
 ---
 
 # Multi-Chain Support: The Backbone of Modern Web3 CRM Systems

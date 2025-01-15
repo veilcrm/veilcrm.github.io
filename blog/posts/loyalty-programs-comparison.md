@@ -2,6 +2,7 @@
 title: Comparing Loyalty Program Approaches - Centralized vs. Decentralized
 date: 2025-01-13
 author: Veil CRM Team
+excerpt: Loyalty programs have long been a staple of customer retention strategies across industries. However, the traditional...
 ---
 
 # Comparing Loyalty Program Approaches: Centralized vs. Decentralized

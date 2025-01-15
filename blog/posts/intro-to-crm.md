@@ -1,8 +1,8 @@
 ---
 title: Introduction to CRM - Beyond Traditional Customer Management
 date: 2025-01-11
-author: Veil Team
-tags: [CRM, Customer Relationship Management, Web3, Blockchain]
+author: Veil CRM Team
+excerpt: "In today's rapidly evolving digital landscape, Customer Relationship Management (CRM) has transformed from a simple contact..."
 ---
 
 # Introduction to CRM: Beyond Traditional Customer Management

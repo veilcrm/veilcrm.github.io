@@ -3,24 +3,6 @@
 Address: 5J6bvnGU7jKcdT9NQfwNwrWu8skDjETfe7fG5LDapump
 ```
     {
-        "title": "Introduction to CRM - Beyond Traditional Customer Management",
-        "excerpt": "In today's rapidly evolving digital landscape, Customer Relationship Management (CRM) has transformed from a simple contact...",
-        "url": "/blog/posts/intro-to-crm.md",
-        "date": "2025-01-11"
-    },
-    {
-        "title": "Comparing Loyalty Program Approaches: Centralized vs. Decentralized",
-        "excerpt": "Loyalty programs have long been a staple of customer retention strategies across industries. However, the traditional centralized...",
-        "url": "/blog/posts/loyalty-programs-comparison.md",
-        "date": "2025-01-13"
-    },
-    {
-        "title": "Multi-Chain Support: The Backbone of Modern Web3 CRM Systems",
-        "excerpt": "In the rapidly evolving landscape of Web3 technologies, multi-chain support has emerged as a critical feature for Customer Relationship Management...",
-        "url": "/blog/posts/multi-chain-crm-post.md",
-        "date": "2025-01-15"
-    },
-    {
         "title": "Scaling Your DeFi Platform: Customer Retention Strategies",
         "excerpt": "The decentralized finance (DeFi) landscape is becoming increasingly competitive. With new platforms emerging daily, the key to...",
         "url": "/blog/posts/scaling-defi-retention-post.md",
